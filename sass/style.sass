@@ -1,0 +1,806 @@
+*
+    box-sizing: border-box
+html
+    font-family: 'Poppins', sans-serif
+.container
+    margin: 0 auto
+    position: relative
+    max-width: 1150px
+    z-index: 1
+.container-2
+    margin: 0 auto
+    position: relative
+    max-width: 1250px
+.main-section
+    background: #002547
+    min-height: 850px
+    z-index: -2
+    &__header
+        display: flex
+        flex-direction: row
+        padding-top: 44px
+        align-content: center
+        align-items: center
+        justify-content: space-between
+    &__logo
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__nav
+        display: inline-flex
+    &__nav_logo
+        padding-right: 13px
+    &__nav_text
+        font-size: 22px
+        font-weight: 600
+        color: #FFFFFF
+    &__nav_url
+        text-decoration: none
+        outline: none
+    &__nav_p
+        padding-top: 20px
+    &__ul
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__li
+        color: #ACACAC
+        font-weight: 400
+        margin-right: 40px
+        &:last-child
+            margin-right: 167px
+    &__href
+        text-decoration: none
+        outline: none
+        color: #ACACAC
+        &:hover
+            color: #ffffff
+            outline: #ffffff
+            text-decoration: underline
+            font-weight: 500
+    &__nav_button
+        width: 147px
+        height: 53px
+        background: #ffffff
+        border-radius: 6px
+        box-shadow: inset 0 -5px 0 #bbbbbb
+        text-decoration: none
+        outline: none
+        transition: 0.4s ease-in-out
+        color: rgba(29, 146, 255, 1)
+        &:hover
+            box-shadow: inset 0 -60px 0 #afafaf, 2px 2px 3px rgba(0, 0, 0, 0.3)
+            color: #ffffff
+    &__nav_button_text
+        text-align: center
+        padding-top: 17px
+        font-size: 18px
+        font-weight: 500
+    &__wrappers
+        display: flex
+        flex-direction: row
+    &__left-wrapper
+        position: relative
+        width: 592px
+        height: 612px
+        &_h3
+            color: rgba(29, 146, 255, 1)
+            font-weight: 400
+            letter-spacing: 0.05em
+            padding-top: 126px
+        &_h2
+            width: 670px
+            font-weight: 500
+            font-size: 60px
+            line-height: 140%
+            color: #FFFFFF
+            padding-bottom: 25px
+            &_span
+                color: #1D92FF
+                font-weight: 600
+        &_hr
+            position: absolute
+            width: 74px
+            height: 3px
+            border: none
+            background: white
+            top: 180px
+            left: 415px
+            z-index: 1
+        &_hr-2
+            position: absolute
+            width: 133px
+            height: 3px
+            border: none
+            background: #1D92FF
+            top: 180px
+            left: 355px
+        &_p
+            width: 401px
+            font-weight: 400
+            line-height: 28.8px
+            font-size: 18px
+            color: rgba(255, 255, 255, 0.7)
+            margin-bottom: 40px
+            &_a
+                color: white
+                font-weight: 500
+                &:hover
+                    color: #c9c9c9
+    &__rectangle
+        position: absolute
+        width: 1106.12px
+        height: 411.54px
+        left: -169.78px
+        top: 183.51px
+        background: linear-gradient(88.16deg, rgba(7, 45, 81, 0.6) 1.5%, rgba(0, 37, 71, 0.6) 82.37%)
+        transform: rotate(44.88deg)
+        z-index: 0
+        overflow: hidden
+    &_buttons
+        display: flex
+        flex-direction: row
+        align-items: center
+.left-wrapper
+    &__button
+        display: flex
+        width: 205px
+        height: 53px
+        background: #ffffff
+        border-radius: 3px
+        text-decoration: none
+        outline: none
+        box-shadow: inset 0 -5px 0 #bbbbbb
+        transition: 0.4s ease-in-out
+        color: rgba(29, 146, 255, 1)
+        margin-right: 30px
+        &:hover
+            box-shadow: inset 0 -60px 0 #afafaf, 2px 2px 3px rgba(0, 0, 0, 0.3)
+            color: #ffffff
+    &_p
+        font-size: 18px
+        font-weight: 500
+        line-height: 130%
+        margin: 0 auto
+        padding-top: 14px
+    &__button-2
+        text-decoration: none
+        outline: none
+        display: flex
+        width: 205px
+        height: 53px
+        background: none
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        border-radius: 3px
+        color: #FFFFFF
+        box-shadow: inset 0 -5px 0 rgba(29, 146, 255, 1)
+        transition: 0.4s ease-in-out
+        &:hover
+            box-shadow: inset 0 -60px 0 rgba(29, 146, 255, 1), 2px 2px 3px rgba(0, 0, 0, 0.3)
+            color: #ffffff
+    &__p-2
+        font-size: 18px
+        font-weight: 500
+        line-height: 130%
+        margin: 0 auto
+        padding-top: 14px
+        text-transform: capitalize
+    &__hr
+        position: absolute
+        width: 457px
+        opacity: 0.2
+        border: 0.5px solid #FFFFFF
+        top: 515px
+    &_p-3
+        padding-top: 18px
+        padding-left: 8px
+        width: 450px
+        position: absolute
+        top: 525px
+        line-height: 22.4px
+        font-weight: 400
+        color: rgba(255, 255, 255, 0.4)
+    &__span
+        color: rgba(255, 255, 255, 0.7)
+    &_arrow
+        position: absolute
+        top: 545px
+.right-wrapper
+    position: relative
+    &__mockup
+        position: absolute
+        top: -10px
+        z-index: -1
+    &__mouse
+        position: absolute
+        top: 417px
+    &__rectangle
+        position: absolute
+        top: 538px
+        left: 607px
+.second-section
+    position: relative
+    min-height: 950px
+    background: #ffffff
+    &__box
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding-top: 130px
+        padding-bottom: 140px
+    &__left-wrapper
+        position: relative
+        &_img
+            position: absolute
+            left: -190px
+            z-index: 1
+        &_img-2
+            position: absolute
+            left: 152px
+            top: 174px
+            z-index: 2
+.right-wrapper
+    &__box
+        position: relative
+        width: 496px
+        height: 470px
+        margin-left: 654px
+    &__p
+        color: rgba(29, 146, 255, 1)
+        line-height: 25.6px
+        letter-spacing: 0.05em
+        font-weight: 400
+    &__box-text
+        width: 425px
+        margin-bottom: 25px
+    &__h5
+        text-transform: capitalize
+        font-weight: 400
+        font-size: 39px
+        line-height: 52.65px
+    &_span
+        font-weight: 600
+    &__box-text-2
+        margin-bottom: 45px
+    &__box-1
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 468px
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0px
+    &__p-2
+        text-transform: capitalize
+        font-weight: 400
+        font-size: 16px
+        line-height: 25.6px
+        color: rgba(1, 7, 13, 0.7)
+    &__icon
+        margin-right: 15px
+    &__text-1
+        text-transform: capitalize
+        line-height: 25.6px
+        opacity: 0,5
+        font-weight: 400
+.third-section
+    position: relative
+    min-height: 900px
+    background: #ffffff
+    &__left-wrapper
+        width: 470px
+        height: 900px
+        &__with
+            text-transform: capitalize
+            font-weight: 600
+            font-size: 39px
+            line-height: 140%
+            color: rgba(1, 7, 13, 1)
+    &__span
+        font-weight: 400
+    &__box-2
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        width: 472px
+        height: 50px
+        border: 1px solid rgba(1, 7, 13, 0.1)
+        border-radius: 5px
+        margin-bottom: 15px
+        &:last-child
+            margin-bottom: 110px
+    &__href
+        text-decoration: none
+        outline: none
+    &__text_p
+        padding-left: 20px
+        line-height: 160%
+        font-weight: 400
+        font-size: 16px
+        color: rgba(1, 7, 13, 1)
+    &__vector
+        padding-right: 24px
+    &__box_active
+        width: 472px
+        height: 107px
+    &__active
+        position: relative
+        display: none
+        width: 413px
+        height: 107px
+        padding-top: 10px
+        padding-left: 35px
+        &_text
+            font-weight: 400px
+            line-height: 150%
+            color: rgba(1, 7, 13, 0.6)
+    &__buttons
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__button-1
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        width: 198px
+        height: 49px
+        background: rgba(29, 146, 255, 1)
+        color: white
+        box-shadow: inset 0 -5px 0 #66abd3
+        transition: 0.4s ease-in-out
+        margin-right: 25px
+        &:hover
+            box-shadow: inset 0 -60px 0 #457692, 2px 2px 3px rgba(0, 0, 0, 0.3)
+            color: #ffffff
+    &__text-1
+        font-weight: 500
+        line-height: 120%
+    &__button-2
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 4px
+        width: 198px
+        height: 49px
+        border: 1px solid #b1d9ff
+        background: #FFFFFF
+        color:rgba(29, 146, 255, 1)
+        box-shadow: inset 0 -5px 0 #457692
+        transition: 0.4s ease-in-out
+        &:hover
+            box-shadow: inset 0 -60px 0 #457692, 2px 2px 3px rgba(0, 0, 0, 0.3)
+            color: #ffffff
+    &__text-2
+        font-weight: 500
+        line-height: 120%
+    &__right-wrapper
+        position: absolute
+        top: 61px 
+        left: 434px
+.p-2
+    padding-top: 90px
+.fouth-section
+    position: relative
+    min-height: 1000px
+    padding-top: 43px
+    margin: 0 auto
+    &_p
+        font-weight: 400
+        line-height: 25.6px
+        letter-spacing: 0.05em
+        color: rgba(29, 146, 255, 1)
+        text-align: center
+        text-transform: uppercase
+        padding-bottom: 10px
+    &__box-1
+        margin-left: 260px
+        width: 628px
+        height: 106px
+        margin-bottom: 25px
+    &__h1
+        text-align: center
+        font-weight: 600
+        font-size: 39px
+        line-height: 135%
+    &__box-2
+        width: 578px
+        height: 28px
+        margin-left: 284px
+        margin-bottom: 60px
+    &__p-1
+        color: rgba(0, 0, 0, 0.7)
+        line-height: 160%
+        text-align: center
+    &__content-box
+        width: 1146px
+        height: 603px
+        border: 1px dashed rgba(119, 190, 255, 0.448)
+
+
+
+    &__content-box-1
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        padding-top: 38px
+        padding-left: 68px
+        padding-right: 68px
+        padding-bottom: 60px
+    &__content-box-2
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        padding-left: 68px
+        padding-right: 68px
+
+.dives
+    width: 226px
+    height: 208px
+.fouth-section
+    &__div-1
+        &_icon
+            padding-left: 68px
+            padding-bottom: 24.29px
+        &_p1
+        &_p2
+    &__div-2
+
+        &_p2
+.p-44
+    padding-bottom: 15px
+    text-align: center
+    font-size: 20px
+    font-weight: 500
+    line-height: 30px
+.p-22
+    text-align: center
+    color: rgba(1, 7, 13, 0.7)
+.fifth-section
+    position: relative
+    min-height: 900px
+    &__text
+        padding-top: 41px
+        text-align: center
+        padding-bottom: 60px
+        &_p
+            font-size: 39px
+            font-weight: 600
+            line-height: 135%
+            text-transform: capitalize
+            color #01070d
+            margin-bottom: 20px
+        &_p-2
+            font-weight: 400
+            line-height: 160%
+            color: rgba(1, 7, 13, 0.7)
+            padding-left: 240px
+    &__boxes
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin: 0 auto
+        width: 1065px
+        height: 613px
+    &__box-1
+        width: 352px
+        height: 537px
+        border: 1px solid rgba(29, 146, 255, 0.1)
+        border-radius: 10px
+        z-index: 0
+        &_button
+            margin: 0 auto
+            height: 43px
+            width: 208px
+            background: rgba(29, 146, 255, 1)
+            border-radius: 4px
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            &_p
+                text-align: center
+                padding-top: 12px
+                color: #ffffff
+                line-height: 120%
+            &_a
+                text-decoration: none
+                outline: none
+    &__box-2
+        position: absolute
+        width: 362px
+        height: 613px
+        background: rgba(0, 37, 71, 1)
+        border-radius: 10px
+        box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05)
+        z-index: 1
+        left: 345px
+        &_p
+            text-align: center
+            padding-top: 50px
+            font-size: 20px
+            font-weight: 700
+            line-height: 150%
+            color: rgba(255, 255, 255, 1)
+            margin-bottom: 15px
+        &_p-2
+            width: 181px
+            color: rgba(255, 255, 255, 0.7)
+            margin-left: 91px
+            font-weight: 400
+            line-height: 160%
+            font-size: 13px
+            margin-bottom: 20px
+        &_p-3
+            text-align: center
+            font-size: 39px
+            font-weight: 500
+            line-height: 135%
+            margin-bottom: 20px
+            color: rgba(255, 255, 255, 1)
+        &__div
+            position: relative
+            margin: 0 auto
+            height: 36px
+            width: 222px
+            border-radius: 18px
+            background: rgba(255, 255, 255, 0.1)
+            border: 1px solid rgba(255, 255, 255, 0.3)
+            margin-bottom: 40px
+        &__div-2
+            position: relative
+            height: 34px
+            width: 110px
+            border: 1px solid rgba(255, 255, 255, 0.5)
+            background: rgba(29, 146, 255, 1)
+            border-radius: 18px
+            &_p
+                padding-top: 6px
+                text-align: center
+                font-weight: 400
+                line-height: 160%
+                font-size: 13px
+                color: rgba(255, 255, 255, 1)
+            &_p-2
+                position: absolute
+                top: 6px
+                left: 135px
+                font-weight: 400
+                line-height: 160%
+                font-size: 13px
+                color: rgba(255, 255, 255, 1)
+        &_button
+            height: 43px
+            width: 208px
+            border-radius: 4px
+            background: #FFFFFF
+            margin: 0 auto
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            &_p
+                line-height: 120%
+                color: rgba(29, 146, 255, 1)
+                text-align: center
+                padding-top: 12px
+
+    &__box-3
+        position: absolute
+        left: 700px
+        width: 352px
+        height: 537px
+        border: 1px solid rgba(29, 146, 255, 0.1)
+        border-radius: 10px
+        z-index: 0
+    &__div
+        position: relative
+        margin: 0 auto
+        background: rgba(250, 250, 250, 1)
+        width: 222px
+        height: 36px
+        border: 0.5px solid rgba(1, 7, 13, 0.05)
+        border-radius: 18px
+        margin-bottom: 27px
+        &_box
+            display: flex
+            flex-direction: row
+            align-items: center
+            width: 246px
+            height: 22px
+            margin: 0 auto
+            margin-bottom: 33px
+        &_p
+            top: 6px
+            left: 135px
+            position: absolute
+            font-weight: 400
+            line-height: 160%
+            font-size: 13px
+            color: rgba(1, 7, 13, 0.4)
+        &_p-2
+            font-size: 16px
+            width: 206px
+            height: 19px
+            color: rgba(0, 0, 0, 1)
+            opacity: 0.6
+        &_img
+            width: 22px
+            height: 22px
+            margin-right: 17px
+    &__div-2
+        width: 110px
+        height: 34px
+        background: #FFFFFF
+        box-shadow: 4px 2px 38px rgba(0, 0, 0, 0.02)
+        border-radius: 18px
+        &_p
+            padding-top: 6px
+            text-align: center
+            font-weight: 400
+            line-height: 160%
+            font-size: 13px
+            color: #01070D
+.h2
+    text-align: center
+    font-size: 20px
+    line-height: 150%
+    font-weight: 500
+    color: rgba(1, 7, 13, 1)
+    padding-top: 29px
+    padding-bottom: 15px
+.p-45
+    text-align: center
+    width: 181px
+    margin-left: 91px
+    font-size: 13px
+    font-weight: 400
+    line-height: 160%
+    color: rgba(1, 7, 13, 0.7)
+    padding-top: 19
+.p-46
+    text-align: center
+    font-size: 39px
+    font-weight: 500
+    line-height: 135%
+    color: #01070D
+    margin-bottom: 20px
+.p-66
+    font-weight: 600
+    color: #FFFFFF
+    opacity: 1
+.fotter-section
+    position: relative
+    min-height: 252px
+    &_fon
+        position: absolute
+        z-index: -1
+        padding-top: 64px
+        overflow: hidden
+    &_img
+        position: absolute
+        top: 64px
+    &__content
+        position: relative
+        &_p
+            position: absolute
+            top: 118px
+            left: 56px
+            font-size: 30px
+            color: #ffffff
+        &_text
+            position: absolute
+            width: 420px
+            left: 57px
+            top: 162px
+            color: rgba(255, 255, 255, 0.7)
+        &_box
+            position: absolute
+            display: flex
+            flex-direction: row
+            background: none
+            height: 62px
+            width: 460px
+            border-radius: 100px
+            top: 142px
+            right: 52px
+            border: 2px solid rgba(255, 255, 255, 0.7)
+            &_text
+                padding-top: 22px
+                padding-left: 40px
+                color: #FFFFFF
+                opacity: 0.7
+            &_div
+                position: absolute
+                left: 368px
+                top: 8px
+                width: 76px
+                height: 42px
+                background: rgba(255, 255, 255, 1)
+                border-radius: 100px
+            &_arrow
+                position: absolute
+                padding-top: 13px
+                padding-left: 26px
+.footer-section
+    position: relative
+    min-height: 376px
+    background: rgba(7, 12, 17, 1)
+    z-index: -2
+    &__content
+        display: flex
+        flex-direction: row
+        padding-top: 126px
+    &__logo
+        display: flex
+        flex-direction: row
+        align-items: center
+        &_href
+            text-decoration: none
+            outline: none
+        &_text
+            padding-left: 13px
+            font-size: 22px
+            font-weight: 600
+            color: #FFFFFF
+    &__text
+
+        padding-top: 30px
+        line-height: 150%
+        width: 242px
+        color: rgba(255, 255, 255, 0.7)
+        margin-right: 138px
+    &__columns
+        display: flex
+        flex-direction: row
+    &__column-2
+        display: flex
+        margin-right: 81px
+    &__ul
+        margin-right: 81px
+        &:last-child
+            margin-right: 0px
+    &__li
+        font-size: 13px
+        color: #FFFFFF
+        opacity: 0.7
+        padding-bottom: 19px
+        font-weight: 300
+    &_p-3
+        font-size: 13px
+        font-weight: 500
+        color: #FFFFFF
+        padding-bottom: 20px
+    &__address
+        width: 213px
+        height: 38px
+        opacity: 0.5
+        border: 1px solid rgba(255, 255, 255, 0.5)
+        border-radius: 19.5px
+        margin-bottom: 20px
+        &_p
+            color: #FFFFFF
+            opacity: 0.6
+            line-height: 150%
+            font-size: 13px
+            font-weight: 400
+            padding-top: 8px
+            padding-left: 15px
+    &__box
+        display: flex
+        flex-direction: column
+    &__icon_href
+        text-decoration: none
+    &__soc
+        margin-right: 10px
+        &:last-child
+            margin-right: 0px
+.li-1
+    font-size: 13px
+    font-weight: 500
+    color: #FFFFFF
+    opacity: 1
+    padding-bottom: 29px
+
+
